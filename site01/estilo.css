@@ -1,0 +1,100 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgba(189, 151, 250, 0.219), rgba(133, 51, 241, 0.26));
+    margin: 0%;
+}
+.hero{
+    background-image: url(./imagens/bg-3.jpg);
+    height: 700px;
+    background-position: right center;
+    background-size: cover;
+    border-top: 1px solid transparent;
+    
+}
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 43px;
+    text-shadow: 3px 3px 4px black; 
+}
+.hero-content p{
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.466);
+    display: inline-block;
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+.hero nav ul{
+    text-align: right;
+    margin: 20px 20px 0 0
+}
+.hero nav li{
+    display: inline-block;
+    border-style: 5px solid white;
+    list-style: none;
+    border: 1px solid rgb(82, 41, 3);
+    margin: 3px;
+}
+.hero nav a{
+   background-color: rgba(121, 16, 219, 0.233);
+   color: rgb(82, 41, 3);
+   display: block;
+   padding: 12px;
+   font-size: 12px;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   
+   
+}
+.hero nav a:hover{
+    background-color: rgba(91, 10, 167, 0.349);
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+.content-section{
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+    
+}
+.content-section h2{
+    background-color: rgba(175, 145, 9, 0.479);
+    padding: 5px;
+    margin-top: 1px;
+    
+}
+.card{
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+}
+.card img {
+    width: 100%;
+    display: block;
+}
+.card-1, .card-2{
+    margin-right: 2%;
+}
+.card p{
+    color: rgb(85, 18, 85) ;
+    background-color: rgba(91, 10, 167, 0.349);
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(121, 16, 219, 0.384);
+    color:rgb(82, 41, 3) ;
+    padding: 1px;
+    font-size: 14px;
+}
