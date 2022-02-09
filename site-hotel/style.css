@@ -54,6 +54,15 @@ h1, h2, h3, h4{
     color: white;
     text-decoration: none;
 }
+.icon-play{
+    height: 4em;
+    display: none;
+}
+.icon-play img{
+    max-width:100% ;
+    max-height: 100%;
+}
+
 .clearfix:after, .row::after{
     content: '';
     display: block;
@@ -133,6 +142,10 @@ footer p{
     .top-header-logo{
         float: left;
     }
+    .icon-play{
+        
+        display: block;
+    }
     .top-nav{
         background-color: transparent;
         float: right;
@@ -156,6 +169,9 @@ footer p{
     .top-contente{
         background: #521a66;
         color: white;
+        background-image: url(images/bg_topo_1198x670.jpg);
+        height: 15em;
+        padding: 10em 5em 0 5em;
     }
     .top-contente-subtitle, .top-contente-title{
         color: white;
@@ -171,4 +187,33 @@ footer p{
     }
 
     
+}
+@media screen and (min-width: 62.5em) /*(1000/16)*/ {
+    .top-contente{
+       /* background-color: #521a66;
+        background-image: url(images/bg_topo_1198x670.jpg);*/
+        background: #521a66 url(images/bg_topo_1198x670.jpg) ;
+        height: 20em;
+        padding-top: 17em;
+        background-repeat: no-repeat;
+        
+    }
+}
+
+@media screen and (min-width:74em ) {
+    .top-contente{
+        background-image: url(images/bg_topo_1600x1374.jpg);
+        padding: 19em 17em 17em;
+        background-position: center top;
+        
+    }
+    .col1-4{
+        width: 23%;
+        margin: 1%;
+    }
+    .col1-2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
 }
