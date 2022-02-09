@@ -5,11 +5,14 @@ html{
 h1, h2, h3, h4{
     font-family: "Oxygen";
 }
+
 .top-header{
     text-align: center;
+ 
 }
 .top-header-logo{
     margin: 0.5em;
+    
 }
 .top-nav{
     background-color: #612674;
@@ -31,20 +34,23 @@ h1, h2, h3, h4{
     background-color: #7c3792;
 }
 .top-contente{
-    padding: 1em;
+    padding: 2em 2em 0 2em;
     text-align: center;
     background-color: #f6f6f6;
+    
 }
 .top-contente-title{
     color: #612674;
     font-size: 1.375em;
     margin: 1.375em;
+    
 
 }
 .top-contente-subtitle{
     color: #a87bb7;
     font-size: 1em;
     line-height: 1.5em;
+   
 }
 .button{
     display: inline-block;
@@ -137,7 +143,7 @@ footer p{
     text-decoration: none;
     color: white;
 }
-@media screen and (min-width: 48.75em){
+@media screen and (min-width: 40em)/*640px*/{
     
     .top-header-logo{
         float: left;
@@ -149,7 +155,7 @@ footer p{
     .top-nav{
         background-color: transparent;
         float: right;
-        margin-top: 27px;
+        margin-top: 24px;
     }
     .top-nav ul{
         margin: 0;
@@ -170,11 +176,12 @@ footer p{
         background: #521a66;
         color: white;
         background-image: url(images/bg_topo_1198x670.jpg);
-        height: 15em;
+        height: 18em;
         padding: 10em 5em 0 5em;
     }
     .top-contente-subtitle, .top-contente-title{
         color: white;
+        
     }
 
     .col1-4{
@@ -188,23 +195,26 @@ footer p{
 
     
 }
-@media screen and (min-width: 62.5em) /*(1000/16)*/ {
+@media screen and (min-width: 56.25em) /*(900/16)*/ {
     .top-contente{
        /* background-color: #521a66;
         background-image: url(images/bg_topo_1198x670.jpg);*/
         background: #521a66 url(images/bg_topo_1198x670.jpg) ;
         height: 20em;
-        padding-top: 17em;
+        padding-top: 10em;
         background-repeat: no-repeat;
+        background-position: center top;
+        color: white;
         
     }
 }
 
-@media screen and (min-width:74em ) {
+@media screen and (min-width:75em ) {
     .top-contente{
         background-image: url(images/bg_topo_1600x1374.jpg);
-        padding: 19em 17em 17em;
+        padding: 10em 17em 10em 17em;
         background-position: center top;
+        height: 20em;
         
     }
     .col1-4{
