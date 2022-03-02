@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jogo de sorte</h1>
+
+    <script>
+        var j1 = parseInt(prompt('Joagador 1, esolha um número: '));
+        var j2 = parseInt(prompt('Jogador 2, esolha um número: '));
+        if(j1 == j2){
+            alert('EMPATE!');
+        } else {
+            if(j1 > j2){
+                var maior = j1;
+                var menor = j2;
+            } else{
+                var maior = j2;
+                var menor = j1;
+            }
+            var s = parseInt(Math.random() * 2);
+            alert(s)
+            if (s == 0){
+                alert(`O ganhador é o ${menor}`);
+            } else{
+                alert(`O ganhador é o ${maior}`);
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação</title>
+</head>
+<body>
+    <h1>Comparação</h1>
+    <script>
+        var n1 = parseFloat(prompt('Digite uma nota: '));
+        var n2 = parseFloat(prompt('Digite outra nota: '));
+
+        var media = (n1+n2)/2;
+
+
+        if(media > 5 && n1 > 0 && n2 > 0){
+            alert(`Parabéns, sua média foi ${media} e você foi aprovado!`);
+        } else{
+            alert(`Sua média foi ${media} e você não foi aprovado. Tente novamente.`);
+        }
+        
+    </script>
+</body>
+</html>
