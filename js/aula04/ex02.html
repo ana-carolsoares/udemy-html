@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <h1>Lógica - Tabuada</h1>
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">x</button>
+    <button onclick="dividir()">/</button>
+    <button onclick="limparTabuada()">Clear</button>
+    <div id="output"></div>
+
+    <script>
+        var n1 = parseFloat(prompt('digite um número: '));
+        escreve();
+        function escreve (){
+            var output = document.querySelector('#output');
+            output.innerHTML = n1;
+        }
+       
+        function somar(){
+            var n = parseFloat(prompt('digite outro número: '));
+            n1 = n1+n;
+            escreve()
+        }
+        function subtrair(){
+            var n = parseFloat(prompt('digite outro número: '));
+            n1 = n1-n;
+            escreve()
+        }
+        function multiplicar(){
+            var n = parseFloat(prompt('digite outro número: '));
+            n1 = n1*n;
+            escreve()
+        }
+        function dividir(){
+            var n = parseFloat(prompt('digite outro número: '));
+            n1 = n1/n;
+            escreve();
+        }
+        function limparTabuada(){
+            mensagem = '';
+            output.innerHTML = mensagem;
+        }
+
+        
+        
+        
+      
+    </script>
+</body>
+</html>
