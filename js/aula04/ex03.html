@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body{
+            background-color: rgb(223, 171, 171);
+            text-align: center;
+            margin: 50px 300px;
+        }
+        button{
+            font-size: 1.5em;
+        }
+        #output{
+            background-color: black;
+            color: white;
+            border-radius: 9px;
+            margin: 15px;
+            padding: 10px;
+            font-size: 2em;
+        }
+        .visor{
+            padding:20px ;
+            background-color: rgb(230, 75, 13);
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+        <div class="visor">
+            <div class="teclado">
+                <button onclick="calcular('+')">+</button>
+                <button onclick="calcular('-')">-</button>
+                <button onclick="calcular('*')">x</button>
+                <button onclick="calcular('/')">/</button>
+                <button onclick="limparTabuada()">Clear</button>
+            </div>
+                <div id="output"></div>
+        </div>
+
+    <script>
+        var n1 = parseFloat(prompt('digite um número: '));
+        escreve();
+        function escreve (){
+            var output = document.querySelector('#output');
+            output.innerHTML = n1;
+        }
+       
+        function calcular(simbolo){
+            var n = parseFloat(prompt('digite outro número: '));
+            //switch
+            switch(simbolo){
+                case '+':
+                    n1 += n;
+                    break;
+                case '-':
+                    n1 -= n;
+                    break;
+                case '*': 
+                    n1 *= n;
+                    break;
+                case '/':
+                    n1 /= n;
+                    break;
+            }
+            
+            escreve()
+        }
+        
+        function limparTabuada(){
+            mensagem = '';
+            output.innerHTML = mensagem;
+        }
+
+        
+        
+        
+      
+    </script>
+</body>
+</html>
