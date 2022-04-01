@@ -12,12 +12,16 @@
     
 </body>
 <script>
+    var soma = 0
     var conjunto = new Array(25, 30, 45, 28, 0, 12, 78, 64);
     for(var i=0; i < conjunto.length; i++){
-        if(conjunto%2 == 0){
-            innerHTML = document.querySelector('#output')
+        console.log(i);
+        console.log(conjunto[i]);
+        if( !isNaN(conjunto[i]) && conjunto[i] % 2 == 0) {
+            soma+=conjunto[i];
         }
     }
+    alert('A soma dos pares é '+ soma)
 </script>
 
 
